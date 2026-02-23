@@ -1,0 +1,13 @@
+s =str(input())
+lower=0
+upper=0
+for i in s:
+    if i.islower():
+        lower+=1
+    else:
+        upper +=1
+if lower == upper or lower > upper:
+    word=s.lower()
+else:
+    word=s.upper()
+print(word)
