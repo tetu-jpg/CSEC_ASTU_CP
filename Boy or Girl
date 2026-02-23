@@ -1,0 +1,7 @@
+s = str(input())
+set_ = set(s)
+n = len(set_)
+if n%2 == 0:
+    print("CHAT WITH HER!")
+else:
+    print("IGNORE HIM!")
