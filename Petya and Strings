@@ -1,0 +1,17 @@
+s1 = str(input())
+s2 = str(input())
+s3 = s1.upper()
+s4 = s2.upper()
+flag = True
+for i in range(len(s4)):
+    if s4[i] > s3[i]:
+        print(-1)
+        flag = False
+        break
+    elif s4[i] < s3[i]:
+        print(1)
+        flag = False
+        break
+if flag:
+    print(0)
+    
