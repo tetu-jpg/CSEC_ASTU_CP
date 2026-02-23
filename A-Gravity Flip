@@ -1,0 +1,4 @@
+n= int(input())
+box = list(map(int,input().split()))
+gravity=box.sort()
+print(*box)
