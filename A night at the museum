@@ -1,0 +1,8 @@
+n=str(input())
+letter="a"
+count=0
+for i in n:
+    x=abs(ord(i)-ord(letter))
+    count +=min(x,26-x)
+    letter=i
+print(count)
