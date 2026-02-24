@@ -1,0 +1,20 @@
+target=1
+matrix=[]
+rows_moves=0
+column_moves=0
+total_moves=0
+for i in range(5):
+        row=list(map(int,input().split()))
+        matrix.append(row)
+for i in range(5):
+        for j in range(5):
+                if matrix[i][j]==target:
+                        rows_moves=abs(i-2)   
+                        column_moves=abs(j-2)
+                        total_moves=column_moves+rows_moves
+                        break
+                else:
+                        continue
+print(total_moves)
+    
+    
