@@ -1,0 +1,14 @@
+a,b,c,d=list(map(int,input().split()))
+s=input()
+count=0
+for i in s:
+    if i=='1':
+        count +=a
+    elif i=='2':
+        count +=b
+    elif i=='3':
+        count +=c
+    elif i=='4':
+        count +=d
+    
+print(count)
