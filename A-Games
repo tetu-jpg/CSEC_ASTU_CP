@@ -1,0 +1,14 @@
+n=int(input())
+counter=0
+home=[]
+guest=[]
+for i in range(n):
+    h,a=map(int,input().split())
+    home.append(h)
+    guest.append(a)
+for i in range(n):
+    for j in range(n):
+        if i!=j:
+            if home[i]==guest[j]:
+                counter +=1
+print(counter)
