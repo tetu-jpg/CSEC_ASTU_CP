@@ -1,0 +1,7 @@
+from fractions import Fraction
+Y,W=map(int,input().split())
+roll=max(Y,W)
+total=6
+favorable=7-roll
+frac=Fraction(favorable,total)
+print(f"{frac.numerator}/{frac.denominator}")
