@@ -1,0 +1,19 @@
+n=int(input())
+a=list(map(int,input().split()))
+m=int(input())
+for i in range(m):
+    b,c=map(int,input().split())
+    b -=1
+    if b > 0:
+        a[b-1] += c-1
+    if b< n-1 :
+        a[b+1] += a[b] - c
+    a[b]=0
+for i in a:
+    print(i)
+
+
+    
+
+
+
