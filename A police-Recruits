@@ -1,0 +1,13 @@
+n= int(input())
+events=list(map(int,input().split()))
+crime=0
+police=0
+for i in events:
+    if i!=-1:
+        police +=i
+    if i==-1:
+        if police !=0:
+            police=police-1
+        else:
+            crime +=1
+print(crime)
