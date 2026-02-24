@@ -1,0 +1,5 @@
+n=list(map(int,input().split()))
+count=0
+for i in set(n):
+    count +=n.count(i)-1
+print(count)
