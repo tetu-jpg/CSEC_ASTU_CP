@@ -1,0 +1,13 @@
+n=int(input())
+cards=list(map(int,input().split()))
+serja=0
+dima=0
+while cards:
+        max1 = max(cards)
+        serja +=max1
+        cards.remove(max1)
+        if cards:
+            max2=max(cards)
+            dima +=max2
+            cards.remove(max2)
+print(serja , dima)
